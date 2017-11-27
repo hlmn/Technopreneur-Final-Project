@@ -267,9 +267,9 @@
 			@php
 				$pics = [
 					'http://erakini.com/wp-content/uploads/2016/02/Pakan-Sapi-Limosin-150x150.jpg',
-					'http://erakini.com/wp-content/uploads/2016/02/sapi-bali-150x150.jpg',
-					'http://update.ahloo.com/wp-content/uploads/2016/09/ahloo-0800-sapi-samar-wajah-google-street-view-150x150.jpg',
-					'https://pecintasatwa.com/wp-content/uploads/2014/12/pedet-silangan-simenthal-sapi-lokal-150x150.jpg',
+					'http://www.bebeja.com/wp-content/uploads/2013/02/bibit-lele-1-150x150.jpg',
+					'http://agribisnis.co.id/wp-content/uploads/2016/03/ayam-3.jpg',
+					'http://www.agrowindo.com/wp-content/uploads/2017/05/Peluang-Usaha-Ternak-Kambing-Etawa-Dan-Analisa-Usahanya-150x150.jpg',
 					'http://mustang89.com/wp-content/uploads/2015/02/sapi-perah-150x150.jpg',
 					'http://www.agrowindo.com/wp-content/uploads/2017/06/Peluang-Usaha-Budidaya-Sapi-Perah-Dan-Analisa-Usahanya-150x150.jpg',
 					'http://kurbanbandung.com/wp-content/uploads/2015/08/sapi-perah-susu-150x150.jpg',
@@ -278,17 +278,20 @@
 					'http://qurbansapimurah.com/wp-content/uploads/2017/08/Sapi-PO7-150x150.jpg',
 					'https://i2.wp.com/sapibagus.com/wp-content/uploads/2014/09/SAPI-LIMOUSIN-600KG-150x150.jpg',
 					'http://www.cekjasa.com/wp-content/uploads/2017/07/sapi-qurban-medan-1-1-150x150.jpg'
-				]
+				];
+
+
 			@endphp
 			@foreach ($pics as $key => $pic)
 				<div class="col-md-2 product-left">
 					<div class="p-one simpleCart_shelfItem jwe">
-							<a href="single">
-								<img src="{{$pic}}" alt="" class="img-responsive" />
-								<div class="mask">
-									<span>Quick View</span>
-								</div>
-							</a>
+						<a href="single">
+							<img src="{{$pic}}" alt="" class="img-responsive" style="margin-bottom: 0px;"/>
+							<div class="mask">
+								<span>Quick View</span>
+							</div>
+						</a>
+						<p style="font-size:0.75em;padding-bottom:0em">Sapi Surabaya</p>
 						<div class="product-left-cart">
 							<div class="product-left-cart-l">
 								<p><a class="item_add" href="#"><i></i> <span class=" item_price">{{rand( 1 , 10)}}%</span></a></p>
@@ -538,5 +541,3 @@
 		</div>
 	</div>
 	@endsection
-<!-- //banner-bottom -->
-<!-- footer -->

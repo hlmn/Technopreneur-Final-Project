@@ -45,12 +45,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="top_bg">
 	<div class="container">
 		<div class="header_top-sec">
-			<div class="top_right">
+			{{-- <div class="top_right">
 				<ul>
 					<li><a href="contact.html">Contact</a></li>|
 					<li><a href="login.html">Track Order</a></li>
 				</ul>
-			</div>
+			</div> --}}
 			<div class="top_left">
 				<ul>
 					<li class="top_link">Email:<a href="mailto:info@example.com">info@example.com</a></li>|
@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="logo">
 		 	<a style="padding-left:0em" href="{{url('')}}"><img src="images/logo.png" style="width:150px;height:75px"></a>
 		</div>
-		<div class="header_right">
+		{{-- <div class="header_right">
 			<div class="cart box_1" style="margin-top:20px">
 				<a href="checkout.html">
 				<h3> <div class="total">
@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 				<div class="clearfix"> </div>
 			</div>
-		</div>
+		</div> --}}
 		<div class="clearfix"></div>
 	</div>
 </div>
@@ -467,5 +467,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <p>© 2015 Pendent Store. All rights reserved | Design by <a href="http://w3layouts.com/"> W3layouts</a></p>
 </div>
 <!-- //footer -->
+@yield('js')
 </body>
 </html>

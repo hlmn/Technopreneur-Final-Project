@@ -39,60 +39,17 @@
 				<h4>Surabaya</h4>
 			<div class="simpleCart_shelfItem">
 				<p><span class="item_price qwe">10%</span> <a href="#">Profit</a></p>
-				{{-- <div class="col-rad">
-					<div class="col-rad-left">
-						<select class="arrival">
-							<option>Color</option>
-							<option>Green</option>
-							<option>Violet</option>
-							<option>Pink</option>
-						</select>
-					</div>
-					<div class="col-rad-right">
-						<section>
-							<div class="row">
-								<div class="colr ert">
-									<label class="radio"><input type="radio" name="radio" checked=""><i></i>14Kt</label>
-								</div>
-								<div class="colr">
-									<label class="radio"><input type="radio" name="radio"><i></i>10Kt</label>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="col-rad tyy">
-					<div class="col-rad-left">
-						<p>Diamond</p>
-					</div>
-					<div class="col-rad-right">
-						<section>
-							<div class="row">
-								<div class="colr ert">
-									<label class="radio"><input type="radio" name="radio1" checked=""><i></i>SI GH</label>
-								</div>
-								<div class="colr">
-									<label class="radio"><input type="radio" name="radio1"><i></i>VS GH</label>
-								</div>
-								<div class="colr">
-									<label class="radio"><input type="radio" name="radio1"><i></i>VVS EF</label>
-								</div>
-							</div>
-						</section>
-					</div>
-					<div class="clearfix"> </div>
-				</div> --}}
-				<p class="qty">Jumlah ::</p><input min="10000" id="quantity" name="quantity" value="1" class="form-control" style="width:50%;padding: 10px 6px 8px;text-align:left;">
+				<form action={{route('checkout')}} method="get">
+				<p class="qty">Investasi ::</p><input min="10000" id="quantity" name="quantity"  class="form-control" style="width:50%;padding: 10px 6px 8px;text-align:left;"><p id="rupiah"> Rp. 0</p>
 				<div class="single-but item_add">
 					<input type="submit" value="Investasi Sekarang!">
-				</div>
+				</div></form>
 			</div>
 			<div class="flower-type">
 			{{-- <p>Model  ::</p>
 			<p>Carrets  ::<a href="#">22</a></p> --}}
 			<p>Timeline proyek investasi  ::<a href="#">06 Dec 2017 - 16 Mar 2018</a></p>
-			<hr>
+			{{-- <hr> --}}
 
 				<p>Pendanaan saat ini ::<a href="#">Rp. 3.125.000</a></p>
 				<p>Kebutuhan Dana ::<a href="#">Rp. 10.000.000</a></p>
@@ -104,92 +61,31 @@
 		<div class="clearfix"></div>
 	</div>
 
-<!-- collapse -->
-{{-- <div class="panel-group collpse" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Description
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-           additional information
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          reviwes(5)
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingFour">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          help
-        </a>
-      </h4>
-    </div>
-    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div> --}}
-<!-- collapse -->
-<!-- related products -->
 <hr>
 	<div class="related-products">
 		<h3>Related Products</h3>
 		<div class="col-md-4 related products-grid">
-			<img src="images/19.jpg" alt=" " class="img-responsive" />
+			<img src="http://5.imimg.com/data5/CK/NL/MY-28556903/breed-cow-500x500.jpg" alt=" " class="img-responsive" />
 			<div class="simpleCart_shelfItem rel">
-				<p><span class="overline">$ 1000</span> <span class="item_price val">$ 729</span></p>
+				<p><span class="item_price val">10%</span></p>
 				<div class="single-but item_add">
 					<input type="submit" value="add to cart">
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4 related products-grid">
-			<img src="images/18.jpg" alt=" " class="img-responsive" />
+			<img src="https://wallpaperscraft.com/image/cow_head_nose_meadow_grass_sky_16958_300x400.jpg" alt=" " class="img-responsive" />
 			<div class="simpleCart_shelfItem rel">
-				<p><span class="overline">$ 1000</span> <span class="item_price val">$ 729</span></p>
+				<p><span class="item_price val">5%</span></p>
 				<div class="single-but item_add">
 					<input type="submit" value="add to cart">
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4 related products-grid">
-			<img src="images/20.jpg" alt=" " class="img-responsive" />
+			<img src="http://1.bp.blogspot.com/_W19ZkFqGT-M/SW8Snq0JgZI/AAAAAAAAAtc/mUHIp3mGyqs/s400/Obese+cow+.jpg" alt=" " class="img-responsive" />
 			<div class="simpleCart_shelfItem rel">
-				<p><span class="overline">$ 1000</span> <span class="item_price val">$ 729</span></p>
+				<p><span class="item_price val">8%</span></p>
 				<div class="single-but item_add">
 					<input type="submit" value="add to cart">
 				</div>
@@ -203,4 +99,21 @@
 <!-- single -->
 <!-- footer -->
 
+@endsection
+@section('js')
+<script type="text/javascript">
+function convertToRupiah(angka)
+{
+	var rupiah = '';		
+	var angkarev = angka.toString().split('').reverse().join('');
+	for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
+	return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
+}
+
+$(document).ready(function(){
+	$('#quantity').on('keyup', function(){
+		$('#rupiah').html(convertToRupiah($(this).val()));
+	});
+});
+</script>
 @endsection
