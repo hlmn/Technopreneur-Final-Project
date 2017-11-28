@@ -9,11 +9,11 @@
 				
 			<ul class="total_price">
 			   <li class="last_price"> <h4>TOTAL</h4></li>	
-			   <li class="last_price"><span class="rupiah">{{$requestData['quantity']}}</span></li>
+			   <li class="last_price"><span class="rupiah"></span></li>
 			   <div class="clearfix"> </div>
 			</ul> 
 			<div class="clearfix"></div>
-			<a class="order" href="#">Lanjut Ke Pembayaran</a>
+			<a class="order" href="{{route('pembayaran',['quantity' => $requestData['quantity']])}}">Lanjut Ke Pembayaran</a>
 			{{-- <div class="total-item">
 				<h3>OPTIONS</h3>
 				<h4>COUPONS</h4>
@@ -21,7 +21,7 @@
 			</div> --}}
 		</div>
 		<div class="col-md-9 cart-items">
-			<h1>My Shopping Bag (2)</h1>
+			<h1>Permohonan Investasi</h1>
 				{{-- <script>$(document).ready(function(c) {
 					$('.close1').on('click', function(c){
 						$('.cart-header').fadeOut('slow', function(c){
@@ -44,7 +44,7 @@
 							</ul>
 							<div class="delivery">
 								{{-- {{dd($requestData)}} --}}
-								 <p>Service Charges : <span class="rupiah">{{$requestData['quantity']}}</span></p>
+								 <p>Service Charges : <span class="rupiah"></span></p>
 								 {{-- <span>Delivered in 2-3 bussiness days</span> --}}
 								 <div class="clearfix"></div>
 							</div>	
@@ -91,4 +91,22 @@
 		<div class="clearfix"> </div>
 	</div>
 </div>
+@endsection
+
+
+@section('js')
+<script type="text/javascript">
+	function convertToRupiah(angka)
+	{
+		var rupiah = '';		
+		var angkarev = angka.toString().split('').reverse().join('');
+		for(var i = 0; i < angkarev.length; i++) if(i%3 == 0) rupiah += angkarev.substr(i,3)+'.';
+		return 'Rp. '+rupiah.split('',rupiah.length-1).reverse().join('');
+	}
+
+	$(document).ready(function(){
+		var total = {{$requestData['quantity']}};
+		$('.rupiah').html(convertToRupiah(total));
+	});
+</script>
 @endsection

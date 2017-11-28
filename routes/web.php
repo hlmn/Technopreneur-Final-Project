@@ -15,4 +15,5 @@ Route::view('/', 'index');
 Route::view('/products', 'products');
 Route::view('/single', 'single');
 Route::get('/checkout', 'TransaksiController@checkout')->name('checkout');
-Route::view('/pembayaran', 'pembayaran');
+Route::get('/pembayaran', 'TransaksiController@pembayaran')->name('pembayaran');
+Route::get('/konfirmasi', 'TransaksiController@konfirmasi')->name('konfirmasi');
