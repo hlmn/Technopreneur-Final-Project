@@ -12,7 +12,7 @@
 				   <div class="clearfix"> </div>
 				</ul> 
 				<div class="clearfix"></div>
-				<a class="order" href="#">Konfirmasi</a>
+				<a class="order" href="{{route('konfirmasi', ['quantity' => $requestData['quantity']])}}">Konfirmasi</a>
 			</div>
 			<div class="col-md-9">
 				<h1>Metode Pembayaran</h1>

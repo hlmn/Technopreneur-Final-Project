@@ -16,4 +16,14 @@ class TransaksiController extends Controller
     	$this->data['requestData'] = $request->all();
     	return view('pembayaran', $this->data);
     }
+    public function konfirmasi(Request $request)
+    {
+        $this->data['requestData'] = $request->all();
+        return view('konfirmasi', $this->data);
+    }
+
+    public function status()
+    {
+        return view('statusproyek');
+    }
 }
