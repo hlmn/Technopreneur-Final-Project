@@ -91,8 +91,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <!-- start header menu -->
 		<ul class="megamenu skyblue">
 			<li class="active grid"><a class="color1" href="{{url('')}}">Home</a></li>
-			<li class="grid"><a class="color1" href="#">Produk</a>
-				<div class="megapanel">
+			<li class="grid"><a class="color1" href="{{url('products')}}">Produk</a>
+				<li class="grid"><a class="color1" href="{{url('about')}}">Tentang Kami</a>
+				{{-- <div class="megapanel">
 					<div class="row">
 						<div class="col1">
 							<div class="h_nav">
@@ -154,7 +155,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="col1"></div>
 						<div class="col1"></div>
 					</div>
-    			</div>
+    			</div> --}}
 			</li>
 			{{-- <li><a class="color1" href="#">catalog</a>
 				<div class="megapanel">

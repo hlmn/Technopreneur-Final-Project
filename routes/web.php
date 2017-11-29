@@ -14,8 +14,8 @@
 Route::view('/', 'index');
 Route::view('/products', 'products');
 Route::view('/single', 'single');
+Route::view('/about', 'about');
 Route::get('/checkout', 'TransaksiController@checkout')->name('checkout');
 Route::get('/pembayaran', 'TransaksiController@pembayaran')->name('pembayaran');
 Route::get('/konfirmasi', 'TransaksiController@konfirmasi')->name('konfirmasi');
 Route::get('/profile', 'UserController@profile')->name('profile');
-Route::get('/statusproyek','TransaksiController@status')->name('statusproyek');
