@@ -13,8 +13,10 @@
 
 Route::view('/', 'index');
 Route::view('/products', 'products');
+Route::view('/productsayam', 'productsayam');
 Route::view('/single', 'single');
 Route::view('/about', 'about');
+Route::view('/faq', 'faq');
 Route::get('/checkout', 'TransaksiController@checkout')->name('checkout');
 Route::get('/pembayaran', 'TransaksiController@pembayaran')->name('pembayaran');
 Route::get('/konfirmasi', 'TransaksiController@konfirmasi')->name('konfirmasi');

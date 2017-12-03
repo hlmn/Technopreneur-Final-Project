@@ -1,4 +1,8 @@
-@extends('layouts.layout');
+@extends('layouts.layout')
+
+@section('about')
+active
+@endsection
 
 @section('content')
 <div class="container" style="min-height: 100%;margin-top: 2%">

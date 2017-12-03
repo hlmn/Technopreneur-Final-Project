@@ -1,4 +1,8 @@
 @extends('layouts.layout')
+
+@section('home')
+active
+@endsection
 <!---->
 <!-- content -->
 <!-- banner -->
@@ -30,6 +34,12 @@
 		    content: '';
 		    width: 455px;
 		}
+		.banner-info{
+			padding:0;
+		}
+		.container{
+			width: 1340px;
+		}
 	</style>
 @endsection
 @section('content')
@@ -39,7 +49,7 @@
 		<div class="container">
 <!-- Slider-starts-Here -->
 				<script src="js/responsiveslides.min.js"></script>
-				 <script>
+				 {{-- <script>
 				    // You can also use "$(window).load(function() {"
 				    $(function () {
 				      // Slideshow 4
@@ -47,7 +57,7 @@
 				        auto: true,
 				        pager: false,
 				        nav: true,
-				        speed: 500,
+				        speed: 800,
 				        namespace: "callbacks",
 				        before: function () {
 				          $('.events').append("<li>before event fired.</li>");
@@ -58,7 +68,7 @@
 				      });
 
 				    });
-				  </script>
+				  </script> --}}
 			<!--//End-slider-script -->
 			<div  id="top" class="callbacks_container">
 				<ul class="rslides" id="slider3">
@@ -79,12 +89,10 @@
 						<div class="banner-info">
 							<div class="banner-info1">
 								<div class="banner-inf">
-									<h1>asperiores alias consequatur aut perferendis</h1>
-									<p>Alias earum rerum hic tenetur a sapiente delectus,
-										ut aut reiciendis voluptatibus maiores alias consequatur
-										aut perferendis doloribus asperiores repellat.</p>
+									<h1>Apa itu InvestNation?</h1>
+									<p>Pengelolaan yang masih tradisional itu diakibatkan oleh paradigma peternak yang memandang bahwa peternakan merupakan usaha sampingan atau sekadar investasi jangka pendek. Sehingga bukan tak mungkin peternakan itu berjalan tanpa perencanaan.</p>
 									<div class="buy">
-										<a href="single">Explore</a>
+										<a href={{url('products')}}>Lihat Produk</a>
 									</div>
 								</div>
 							</div>
@@ -94,17 +102,15 @@
 						<div class="banner-info">
 							<div class="banner-info1">
 								<div class="banner-inf">
-									<h1>doloribus alias consequatur aut perferendis</h1>
-									<p>Repellat earum rerum hic tenetur a sapiente delectus,
-										ut aut reiciendis voluptatibus maiores alias consequatur
-										aut perferendis doloribus asperiores repellat.</p>
+									<h1>Kenapa InvestNation?</h1>
+									<p>Investasi disini lebih menguntungkan daripada di bank konvensional. InvestNation juga bertujuan membantu para peternak Indonesia dalam menjalankan bisnis tanpa harus memikirkan keterbatasan lokasi dan waktu.</p> --}}
 									{{-- <div class="buy">
 										<a href="single">Explore</a>
 									</div>
 								</div>
 							</div>
 						</div>
-					{{-- </li> --}}
+					{{-- </li>
 				</ul>
 			</div>
 		</div>
@@ -193,12 +199,12 @@
 	<div class="welcome">
 		<div class="container">
 			<div class="welcome-info" style="padding-bottom: 5vh;">
-				<h3>Welcome To Our Store!</h3>
+				{{-- <h3>Welcome To Our Store!</h3>
 				<p class="non">Repellat molestiae non recusandae<span>Asperiores repellat</span></p>
 				<p class="rep">Perferendis doloribus asperiores repellat</p>
 				<div class="buy wel">
 					<a href="single">Read More</a>
-				</div>
+				</div> --}}
 			</div>
 		</div>
 	</div>
@@ -267,18 +273,20 @@
 			@php
 				$pics = [
 					'http://erakini.com/wp-content/uploads/2016/02/Pakan-Sapi-Limosin-150x150.jpg',
-					'http://www.bebeja.com/wp-content/uploads/2013/02/bibit-lele-1-150x150.jpg',
+					'https://www.jawapos.com/uploads/news/2017/01/29/peternak-ayam-broiler-di-sukabumi-galau-penyebabnya_m_105790.jpeg',
 					'http://agribisnis.co.id/wp-content/uploads/2016/03/ayam-3.jpg',
 					'http://www.agrowindo.com/wp-content/uploads/2017/05/Peluang-Usaha-Ternak-Kambing-Etawa-Dan-Analisa-Usahanya-150x150.jpg',
 					'http://mustang89.com/wp-content/uploads/2015/02/sapi-perah-150x150.jpg',
-					'http://www.agrowindo.com/wp-content/uploads/2017/06/Peluang-Usaha-Budidaya-Sapi-Perah-Dan-Analisa-Usahanya-150x150.jpg',
-					'http://kurbanbandung.com/wp-content/uploads/2015/08/sapi-perah-susu-150x150.jpg',
+					'https://i1.wp.com/duniaternak.com/wp-content/uploads/peternakayam.jpg?resize=600%2C300',
+					'http://i3expo.id/2017/wp-content/uploads/2017/09/10-sapi-3-150x150.jpg',
 					'http://sisapi.lamongankab.go.id/wp-content/uploads/2017/03/1.7-150x150.jpg',
 					'https://i2.wp.com/www.melawinews.com/wp-content/uploads/2016/09/sapi.jpg?resize=150%2C150',
 					'http://qurbansapimurah.com/wp-content/uploads/2017/08/Sapi-PO7-150x150.jpg',
-					'https://i2.wp.com/sapibagus.com/wp-content/uploads/2014/09/SAPI-LIMOUSIN-600KG-150x150.jpg',
-					'http://www.cekjasa.com/wp-content/uploads/2017/07/sapi-qurban-medan-1-1-150x150.jpg'
+					'https://www.jawapos.com/uploads/news/2017/01/29/peternak-ayam-broiler-di-sukabumi-galau-penyebabnya_m_105790.jpeg',
+					'https://www.jawapos.com/uploads/news/2017/01/29/peternak-ayam-broiler-di-sukabumi-galau-penyebabnya_m_105790.jpeg'
 				];
+
+				$names = ['Sapi Limousin','Ayam Sukabumi','Sapi Brahman','Sapi Simetal','Sapi Ongole','Ayam Kedu Hitam','Sapi Bogor','Sapi Madura','Sapi Bali','Sapi PO','Ayam Broiler','Ayam Probolinggo'];
 
 
 			@endphp
@@ -286,12 +294,14 @@
 				<div class="col-md-2 product-left">
 					<div class="p-one simpleCart_shelfItem jwe">
 						<a href="single">
-							<img src="{{$pic}}" alt="" class="img-responsive" style="margin-bottom: 0px;"/>
+							<img src="{{$pic}}" alt="" class="img-responsive" style="margin-bottom: 0px;width: 150px;height:150px"/>
 							<div class="mask">
 								<span>Quick View</span>
 							</div>
 						</a>
-						<p style="font-size:0.75em;padding-bottom:0em">Sapi Surabaya</p>
+						
+						<p style="font-size:0.75em;padding-bottom:0em">{{$names[$key]}}</p>
+						
 						<div class="product-left-cart">
 							<div class="product-left-cart-l">
 								<p><a class="item_add" href="#"><i></i> <span class=" item_price">{{rand( 1 , 10)}}%</span></a></p>

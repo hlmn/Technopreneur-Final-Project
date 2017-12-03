@@ -37,6 +37,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 {{-- <script src="js/simpleCart.min.js"> </script> --}}
 <link href='http://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
 </head>
+<style type="text/css">
+.btn-primary {
+	color: #fff;
+	background-color: #204056;
+	border-color: #204056;
+}
+
+label{
+	color: black;
+}
+</style>
 @yield('style')
 <body>
 <!-- header -->
@@ -54,14 +65,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div> --}}
 			<div class="top_left">
 				<ul>
-					<li class="top_link">Email:<a href="mailto:info@example.com">info@example.com</a></li>|
-					<li class="top_link"><a href="login.html">My Account</a></li>
+					<li class="top_link"><button class="btn btn-primary">Daftar</button></a></li>|
+					<li class="top_link"><bitton data-target="#myModal" data-toggle="modal" class="btn btn-primary" style="border-color:#204056;background-color: transparent; ">Masuk</button></li>
+						{{-- Modal Login --}}
+						<div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header" style="border-bottom: 0">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						        <h2 class="modal-title" style="color: black;text-align: center"><b>MASUK</b></h2>
+						      </div>
+						      <div class="modal-body">
+						      	<label>Username</label>
+						        <input style="background-color: #e4dad373;border-radius:12px" type="text" class="form-control" name="">
+						        <label>Kata Sandi</label>
+						        <input style="background-color: #e4dad373;border-radius:12px; type="text" class="form-control" name="">
+						      </div>
+						      <div class="modal-footer" style="border-top: 0">
+						        {{-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> --}}
+						        <button type="button" class="btn btn-primary" style="width: 100%">Masuk</button><br>
+						        <a style="float:right;color:red;font-size: 15px">Lupa kata sandi?</a>
+						        <a style="float: left;font-size: 15px">Belum Terdaftar?</a>
+						      </div>
+						    </div><!-- /.modal-content -->
+						  </div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
+
+
 <!-- top-header -->
 <!-- logo-cart -->
 <div class="header_top">
@@ -90,9 +126,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="menu_sec">
 		 <!-- start header menu -->
 		<ul class="megamenu skyblue">
-			<li class="active grid"><a class="color1" href="{{url('')}}">Home</a></li>
-			<li class="grid"><a class="color1" href="{{url('products')}}">Produk</a>
-				<li class="grid"><a class="color1" href="{{url('about')}}">Tentang Kami</a>
+			<li class="grid @yield('home')"><a class="color1" href="{{url('')}}">Home</a></li>
+			<li class="grid @yield('proyek')"><a class="color1" href="{{url('products')}}">Proyek Investasi</a>
+			<li class="grid @yield('about')"><a class="color1" href="{{url('about')}}">Tentang Kami</a>
+			<li class="grid @yield('faq')"><a class="color1" href="{{url('faq')}}">Pertanyaan</a>
 				{{-- <div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -433,7 +470,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container">
     <div class="col-md-3 footer-grid">
       <h6>About us</h6>
-      <p>Suspendisse sed accumsan risus. Curabitur rhoncus, elit vel tincidunt elementum, nunc urna tristique nisi, in interdum libero magna tristique ante. adipiscing varius. Vestibulum dolor lorem.</p>
+      <p>Pengelolaan yang masih tradisional itu diakibatkan oleh paradigma peternak yang memandang bahwa peternakan merupakan usaha sampingan atau sekadar investasi jangka pendek. Sehingga bukan tak mungkin peternakan itu berjalan tanpa perencanaan.</p>
     </div>
     <div class="col-md-3 footer-grid">
       <h6>Information</h6>

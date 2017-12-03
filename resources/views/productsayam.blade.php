@@ -3,21 +3,20 @@
 @section('proyek')
 active
 @endsection
+
 @section('content')
 <!---->
 <!-- products -->
 @php
 
-	$picssapi = [
-		'http://www.situslivecasino.online/wp-content/uploads/2016/11/sapi-Ayrshire-150x150.jpg',
-		'http://kahaba.net/wp-content/uploads/2012/10/sapi-edit-150x150.jpg',
-		'https://pecintasatwa.com/wp-content/uploads/2014/12/pedet-hasil-silangan-simenthal-dgn-sapi-lokal-150x150.jpg',
-		'http://rahasiasemesta.com/alambawahsadar/wp-content/uploads/2014/10/sapi-australia-150x150.jpg',
-		'http://i3expo.id/2017/wp-content/uploads/2017/09/10-sapi-3-150x150.jpg',
-		'http://www.sapiqurban.info/wp-content/uploads/2016/02/ID-660-150x150.jpg',
+	
+	$picsayam = [
+		'https://www.jawapos.com/uploads/news/2017/01/29/peternak-ayam-broiler-di-sukabumi-galau-penyebabnya_m_105790.jpeg',
+		'https://i1.wp.com/duniaternak.com/wp-content/uploads/peternakayam.jpg?resize=600%2C300',
+		'https://cdns.klimg.com/merdeka.com/i/w/news/2013/07/04/215611/670x335/enam-bulan-terakhir-peternak-ayam-merugi.jpg',
+		'https://cdns.klimg.com/merdeka.com/i/w/news/2016/05/13/706251/670x335/pt-berdikari-ditunjuk-garap-industri-peternakan-ayam.jpg',
 	];
-
-	$picsCollection = collect($picssapi);
+	$picsCollection = collect($picsayam);
 	// dd($picsCollection);
 @endphp
 	<div class="products">
@@ -35,7 +34,7 @@ active
 													<span>Quick View</span>
 												</div>
 										</a>
-										<h4>Sapi</h4>
+										<h4>Ayam</h4>
 										<p style="font-size:0.75em;padding-bottom:0em">Periode Investasi: 110 hari</p>
 										<p style="font-size:0.75em;padding-bottom:0em">Lokasi: Surabaya</p><br>
 										<p style="font-size:0.75em;padding-bottom:0em">Sisa waktu: 10 hari lagi</p>
@@ -55,10 +54,10 @@ active
 				<div class="col-md-4 products-grid-right">
 					<div class="w_sidebar">
 						<div class="w_nav1">
-							<h4 style="color:grey">All</h4>
+							<h4>All</h4>
 							<ul>
-								<li style="background-color: #84a3b970;"><a href="{{url('/products')}}">Sapi</a></li>
-								<li><a href="{{url('/productsayam')}}">Ayam</a></li>
+								<li><a href="{{url('/products')}}">Sapi</a></li>
+								<li style="background-color: #84a3b970;""><a href="{{url('/productsayam')}}">Ayam</a></li>
 								{{-- <li><a href="#">trends</a></li>
 								<li><a href="#">boys</a></li>
 								<li><a href="#">girls</a></li>
@@ -72,7 +71,7 @@ active
 									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>Necklaces</label>
 								</div> --}}
 								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" checked name="checkbox"><i></i>Surabaya</label>
+									<label class="checkbox"><input type="checkbox" checked name="checkbox"><i></i>Jakarta</label>
 									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Bandung</label>
 
 								</div>
